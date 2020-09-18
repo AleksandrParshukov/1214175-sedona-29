@@ -1,0 +1,157 @@
+/* Variables */
+:root {
+  --basic-black: #000000;
+  --basic-dark: #333333;
+  --basik-gray: #CACACA;
+  --basic-light-gray: #EEEEEE;
+  --basic-white: #FFFFFF;
+  --basic-sky-blue: #81B3D2;
+  --basic-brown: #766357;
+
+  --specal-sky-blue: #669EC0;
+  --specal-darken-sky-blue: #5496BD;
+  --special-brown: #604E43;
+  --special-darken-brown: #503E33;
+  --special-white: rgba(255, 255, 255, 0.3);
+  --special-black: rgba(0, 0, 0, 0.3);
+}
+
+
+/* Global */
+.page-body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--basic-dark);
+  text-transform: uppercase;
+  background-color: var(--basic-white);
+}
+
+.page-body h3,
+.caption {
+  color: var(--basic-black);
+  font-size: 21px;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: var(--basic-black);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+
+/* Main navigation */
+.main-navigation {
+  line-height: 26px;
+  color: var(--basic-black);
+  background-color: transparent;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a:hover {
+  color: var(--basic-sky-blue);
+}
+
+.site-navigation a:active {
+  color: var(--special-black);
+}
+
+/* Greeting */
+.greeting {
+  text-align: center;
+}
+
+
+/* Features */
+.feature-wrapper {
+  color: var(--basic-white);
+  background-color: var(--basic-sky-blue);
+}
+
+.feature-wrapper h3 {
+  color: var(--basic-white);
+}
+
+.feature-container {
+  text-align: center;
+}
+
+.offers-list {
+  list-style: none;
+}
+
+.offer-item {
+  text-align: center;
+}
+
+.features-list {
+  list-style: none;
+  background-color: var(--basic-light-gray);
+}
+
+
+/* Booking */
+.booking {
+  text-align: center;
+}
+
+.booking-caption {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+
+/* Button */
+.button {
+  font: inherit;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  border: none;
+}
+
+.button:active {
+  color: var(--special-white);
+}
+
+.booking-button {
+  background-color: var(--basic-brown);
+}
+
+.booking-button:hover {
+  background-color: var(--special-brown);
+}
+
+.booking-button:active {
+  background-color: var(--special-darken-brown);
+}
+
+.button-link {
+  background-color: var(--basic-sky-blue);
+}
+
+.button-link:hover {
+  background-color: var(--specal-sky-blue);
+}
+
+.button-link:active {
+  background-color: var(--specal-darken-sky-blue);
+}
+
