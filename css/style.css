@@ -2,8 +2,10 @@
 :root {
   --basic-black: #000000;
   --basic-dark: #333333;
+  --basic-darken-gray: #666666;
   --basik-gray: #CACACA;
   --basic-light-gray: #EEEEEE;
+  --basic-lighten-gray: #F2F2F2;
   --basic-white: #FFFFFF;
   --basic-sky-blue: #81B3D2;
   --basic-brown: #766357;
@@ -70,6 +72,11 @@ img {
 
 .site-navigation a:active {
   color: var(--special-black);
+}
+
+.current-page a,
+.current-page a:hover {
+  color: var(--basic-brown);
 }
 
 /* Greeting */
@@ -155,3 +162,60 @@ img {
   background-color: var(--specal-darken-sky-blue);
 }
 
+.button-filter {
+  background-color: transparent;
+  border: 2px solid var(--basic-white);
+}
+
+.button-filter:hover {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+/* Filter */
+.filter {
+  color: var(--basic-white);
+  background-color: var(--basic-sky-blue);
+}
+
+.filter h3 {
+  color: inherit;
+}
+
+
+/* Hotels */
+
+.sort-caption {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sort-list {
+  list-style: none;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sort-item a {
+  color: var(--special-black);
+  border-bottom: 1px dashed var(--basic-sky-blue);
+}
+
+.sort-item a:hover {
+  color: var(--basic-sky-blue);
+}
+
+.sort-item a:active {
+  color: var(--basic-black);
+  border-bottom: none;
+}
+
+.sort-item-active a {
+  color: var(--basic-sky-blue);
+  border-bottom: none;
+}
+
+.rating {
+  color: var(--basic-darken-gray);
+  background-color: var(--basic-lighten-gray);
+}
