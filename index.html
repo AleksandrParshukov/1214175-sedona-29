@@ -10,13 +10,13 @@
   <body class="page-body">
 
   <header class="main-header">
+    <a class="main-header-logo"><img src="img/logo.png" alt="Логотип" width="138" height="70"></a>
     <nav class="main-navigation">
-      <a class="main-header-logo"><img src="img/logo.png" alt="Логотип" width="138" height="70"></a>
       <ul class="site-navigation">
-        <li><a href="">Информация</a></li>
-        <li><a href="">Фото и видео</a></li>
-        <li><a href="">Карта штата</a></li>
-        <li><a href="hotels.html">Гостиницы</a></li>
+        <li class="navigation-info"><a href="">Информация</a></li>
+        <li class="navigation-photo"><a href="">Фото и видео</a></li>
+        <li class="navigation-map"><a href="">Карта штата</a></li>
+        <li class="navigation-hotels"><a href="hotels.html">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
@@ -29,23 +29,25 @@
       <div class="banner">
         <img src="img/welcome.png" alt="Добро пожаловать в Седону" width="458" height="352">
       </div>
-      <p class="caption">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-      <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      <div class="greeting-text">
+        <p class="caption">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      </div>
     </section>
 
     <section class="features">
       <h2 class="hidden">Преимущества</h2>
 
-      <div class="feature-wrapper">
+      <div class="feature-wrapper features-columns">
         <div class="feature-container">
           <h3>Настоящий городок</h3>
           <p>— №1 —</p>
           <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
         </div>
-        <img src="img/real_town.jpg" alt="Настоящий городок" width="800" height="256">
+        <img class="feature-image" src="img/real_town.jpg" alt="Настоящий городок" width="800" height="256">
       </div>
 
-      <ul class="offers-list">
+      <ul class="offers-list features-columns">
         <li class="offer-item offer-housing">
           <h3>Жильё</h3>
           <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
@@ -60,8 +62,8 @@
         </li>
       </ul>
 
-      <div class="feature-wrapper">
-        <img src="img/bridge.jpg" alt="Мост дьявола" width="800" height="256">
+      <div class="feature-wrapper features-columns">
+        <img class="feature-image" src="img/bridge.jpg" alt="Мост дьявола" width="800" height="256">
         <div class="feature-container">
           <h3>Там есть мост дьявола</h3>
           <p>— №2 —</p>
@@ -69,7 +71,7 @@
         </div>
       </div>
 
-      <ul class="features-list">
+      <ul class="features-list features-columns">
         <li class="feature-item feature-container">
           <h3>Небольшая площадь</h3>
           <p>— №3 —</p>
@@ -104,17 +106,25 @@
   </main>
 
   <footer class="main-footer">
+    <section class="footer-contacts">
+      <h2 class="hidden">Наши контакты</h2>
+      <p class="caption">#visitSEDONA</p>
+      <p class="caption">Тел: +7(495) 666-01-66</p>
+    </section>
 
-    <p class="caption">#visitSEDONA</p>
-    <p class="caption">Тел: +7(495) 666-01-66</p>
-
-    <ul class="social">
-      <li class="social-button"><a class="button button-link" href="https://www.twitter.com/"><img class="social-icon" src="img/icon-twitter.svg" alt="Twitter" width="17" height="17"></a></li>
-      <li class="social-button"><a class="button button-link" href="https://www.fb.com/"><img class="social-icon" src="img/icon-fb.svg" alt="Facebook" width="12" height="22"></a></li>
-      <li class="social-button"><a class="button button-link" href="https://www.youtube.com/"><img class="social-icon" src="img/icon-youtube.svg" alt="YouTube" width="20" height="16"></a></li>
-    </ul>
-
-    <a href="https://htmlacademy.ru/intensive/htmlcss"><img class="ha-logo" src="img/logo-htmlacademy.svg" alt="Website by HTML Academy"></a>
+    <section class="footer-social">
+      <h2 class="hidden">Мы в соцсетях</h2>
+      <ul class="social">
+        <li class="social-button"><a class="button button-link" href="https://www.twitter.com/"><img class="social-icon" src="img/icon-twitter.svg" alt="Twitter" width="17" height="17"></a></li>
+        <li class="social-button"><a class="button button-link" href="https://www.fb.com/"><img class="social-icon" src="img/icon-fb.svg" alt="Facebook" width="12" height="22"></a></li>
+        <li class="social-button"><a class="button button-link" href="https://www.youtube.com/"><img class="social-icon" src="img/icon-youtube.svg" alt="YouTube" width="20" height="16"></a></li>
+      </ul>
+    </section>
+    <section class="footer-copyright">
+      <h2 class="hidden">Об авторах</h2>
+      <span>Website by</span>
+      <a href="https://htmlacademy.ru/intensive/htmlcss"><img class="ha-logo" src="img/logo-htmlacademy.svg" alt="Website by HTML Academy"></a>
+    </section>
   </footer>
 
   </body>
