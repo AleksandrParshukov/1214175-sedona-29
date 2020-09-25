@@ -79,9 +79,21 @@ img {
   color: var(--basic-brown);
 }
 
+
 /* Greeting */
 .greeting {
+  display: grid;
+  grid-template-columns: 1200px;
   text-align: center;
+}
+
+.banner {
+  width: 1200px;
+  height: 509px;
+  background-color: var(--basic-white);
+  background-image: url("../img/mask.svg"), url("../img/banner.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
 }
 
 
@@ -105,6 +117,20 @@ img {
 
 .offer-item {
   text-align: center;
+  background-color: transparent;
+  background-repeat: no-repeat;
+}
+
+.offer-housing {
+  background-image: url("../img/icon-house.svg");
+}
+
+.offer-gifts {
+  background-image: url("../img/icon-gift.svg");
+}
+
+.offer-food {
+  background-image: url("../img/icon-food.svg");
 }
 
 .features-list {
@@ -172,10 +198,12 @@ img {
   background-color: var(--basic-white);
 }
 
+
 /* Filter */
 .filter {
   color: var(--basic-white);
   background-color: var(--basic-sky-blue);
+  background-image: url("../img/filter-background.jpg");
 }
 
 .filter h3 {
@@ -215,7 +243,23 @@ img {
   border-bottom: none;
 }
 
+.button-sort {
+  background: none;
+  border: none;
+}
+
+.sort-down {
+  transform: rotate(180deg);
+}
+
 .rating {
   color: var(--basic-darken-gray);
   background-color: var(--basic-lighten-gray);
 }
+
+
+/* Main footer */
+.social {
+  list-style: none;
+}
+
