@@ -255,9 +255,15 @@ img {
 }
 
 .offer-item {
+  margin: 61px 50px 82px;
   text-align: center;
   background-color: transparent;
+  background-position: center 0;
   background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .offer-housing {
@@ -283,11 +289,28 @@ img {
 /* Booking */
 .booking {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.booking-caption {
+.booking p {
+  margin-top: 0;
+  margin-bottom: 51px;
+}
+
+.booking .booking-caption {
+  margin-top: 58px;
+  margin-bottom: 39px;
   font-size: 30px;
   font-weight: 700;
+}
+
+
+.booking .booking-button {
+  width: 568px;
+  height: 86px;
+  margin: auto;
 }
 
 
