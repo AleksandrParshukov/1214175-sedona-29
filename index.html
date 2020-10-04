@@ -1,133 +1,168 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
 
-  <div class="page-body">
-    <header class="main-header">
-      <a class="main-header-logo"><img src="img/logo.png" alt="Логотип" width="138" height="70"></a>
-      <nav class="main-navigation">
-        <ul class="site-navigation">
-          <li class="navigation-info"><a href="">Информация</a></li>
-          <li class="navigation-photo"><a href="">Фото и видео</a></li>
-          <li class="navigation-map"><a href="">Карта штата</a></li>
-          <li class="navigation-hotels"><a href="hotels.html">Гостиницы</a></li>
-        </ul>
-      </nav>
-    </header>
+<div class="page-body">
+  <header class="main-header">
+    <a class="main-header-logo"><img src="img/logo.png" alt="Логотип" width="138" height="70"></a>
+    <nav class="main-navigation">
+      <ul class="site-navigation">
+        <li class="navigation-info"><a href="">Информация</a></li>
+        <li class="navigation-photo"><a href="">Фото и видео</a></li>
+        <li class="navigation-map"><a href="">Карта штата</a></li>
+        <li class="navigation-hotels"><a href="hotels.html">Гостиницы</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main class="content-wrapper index-wrapper">
-      <h1 class="hidden">Седона</h1>
+  <main class="content-wrapper index-wrapper">
+    <h1 class="hidden">Седона</h1>
 
-      <section class="greeting">
-        <h2 class="hidden">Добро пожаловать в Седону</h2>
-        <div class="banner">
-          <img src="img/welcome.png" alt="Добро пожаловать в Седону" width="458" height="352">
+    <section class="greeting">
+      <h2 class="hidden">Добро пожаловать в Седону</h2>
+      <div class="banner">
+        <img src="img/welcome.png" alt="Добро пожаловать в Седону" width="458" height="352">
+      </div>
+      <div class="greeting-text">
+        <p class="caption">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</p>
+        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      </div>
+    </section>
+
+    <section class="features">
+      <h2 class="hidden">Преимущества</h2>
+
+      <div class="feature-wrapper features-columns">
+        <div class="feature-container real-town">
+          <h3>Настоящий городок</h3>
+          <p>— №1 —</p>
+          <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
         </div>
-        <div class="greeting-text">
-          <p class="caption">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</p>
-          <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        <img class="feature-image" src="img/real_town.jpg" alt="Настоящий городок" width="800" height="256">
+      </div>
+
+      <ul class="offers-list features-columns">
+        <li class="offer-item offer-housing">
+          <h3>Жильё</h3>
+          <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+        </li>
+        <li class="offer-item offer-food">
+          <h3>Еда</h3>
+          <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+        </li>
+        <li class="offer-item offer-gifts">
+          <h3>Сувениры</h3>
+          <p>Не только китайского, но и местного производства!</p>
+        </li>
+      </ul>
+
+      <div class="feature-wrapper features-columns">
+        <img class="feature-image" src="img/bridge.jpg" alt="Мост дьявола" width="800" height="256">
+        <div class="feature-container devil-bridge">
+          <h3>Там есть мост дьявола</h3>
+          <p>— №2 —</p>
+          <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
         </div>
-      </section>
+      </div>
 
-      <section class="features">
-        <h2 class="hidden">Преимущества</h2>
+      <ul class="features-list features-columns">
+        <li class="feature-item feature-container">
+          <h3>Небольшая площадь</h3>
+          <p>— №3 —</p>
+          <p>Все достопримечательности находятся очень близко</p>
+        </li>
+        <li class="feature-item feature-container">
+          <h3>Красивая дорога</h3>
+          <p>— №4 —</p>
+          <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
+        </li>
+        <li class="feature-item feature-container">
+          <h3>Мало туристов</h3>
+          <p>— №5 —</p>
+          <p>Большинство едет в гранд каньон и толпится там</p>
+        </li>
+      </ul>
+    </section>
 
-        <div class="feature-wrapper features-columns">
-          <div class="feature-container">
-            <h3>Настоящий городок</h3>
-            <p>— №1 —</p>
-            <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
-          </div>
-          <img class="feature-image" src="img/real_town.jpg" alt="Настоящий городок" width="800" height="256">
-        </div>
+    <section class="booking">
+      <h2 class="hidden">Бронирование</h2>
+      <p class="booking-caption">Заинтересовались?</p>
+      <p>Укажите предполагаемые даты поездки,<br>
+        и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
+      <button class="button booking-button" type="button">Поиск гостиницы в Cедоне</button>
+      <form class="modal modal-visible">
+        <label class="modal-row">Дата заезда:
+          <input class="modal-input-date" type="text" value="24 апреля 2017">
+          <svg class="modal-calendar" width="21" height="23" viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.406 3.02498H19.251C20.217 3.02498 21 3.84698 21 4.86198V21.164C21 22.179 20.217 23 19.251 23H1.75C0.784 23 0 22.179 0 21.164V4.86198C0 3.84698 0.784 3.02498 1.75 3.02498H4.593V1.64798C4.593 1.26698 4.887 0.958984 5.25 0.958984C5.612 0.958984 5.906 1.26698 5.906 1.64798V3.02498H9.844V1.64798C9.844 1.26698 10.138 0.958984 10.501 0.958984C10.862 0.958984 11.156 1.26698 11.156 1.64798V3.02498H15.094V1.64798C15.094 1.26698 15.387 0.958984 15.75 0.958984C16.112 0.958984 16.406 1.26698 16.406 1.64798V3.02498ZM19.5646 21.484C19.6466 21.3979 19.691 21.2828 19.688 21.164H19.689V4.86198C19.689 4.60898 19.493 4.40298 19.252 4.40298H16.407V5.78098C16.407 6.16198 16.113 6.46998 15.751 6.46998C15.388 6.46998 15.095 6.16198 15.095 5.78098V4.40298H11.157V5.78098C11.157 6.16198 10.863 6.46998 10.502 6.46998C10.139 6.46998 9.845 6.16198 9.845 5.78098V4.40298H5.907V5.78098C5.907 6.16198 5.613 6.46998 5.251 6.46998C4.888 6.46998 4.594 6.16198 4.594 5.78098V4.40298H1.75C1.50263 4.40953 1.30696 4.61458 1.312 4.86198V21.164C1.30696 21.4114 1.50263 21.6164 1.75 21.623H19.251C19.3698 21.6201 19.4826 21.5701 19.5646 21.484Z" fill="#A9A9A9"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.59399 9.2251H7.21899V11.2911H4.59399V9.2251ZM4.59399 12.6681H7.21899V14.7351H4.59399V12.6681ZM7.21899 16.1121H4.59399V18.1781H7.21899V16.1121ZM9.18799 16.1121H11.813V18.1781H9.18799V16.1121ZM11.813 12.6681H9.18799V14.7351H11.813V12.6681ZM9.18799 9.2251H11.813V11.2911H9.18799V9.2251ZM16.406 16.1121H13.781V18.1781H16.406V16.1121ZM13.781 12.6681H16.406V14.7351H13.781V12.6681ZM16.406 9.2251H13.781V11.2911H16.406V9.2251Z" fill="#A9A9A9"/>
+          </svg>
+        </label>
+        <label class="modal-row">Дата выезда:
+          <input class="modal-input-date" type="text" value="4 июля 2017">
+          <svg class="modal-calendar" width="21" height="23" viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.406 3.02498H19.251C20.217 3.02498 21 3.84698 21 4.86198V21.164C21 22.179 20.217 23 19.251 23H1.75C0.784 23 0 22.179 0 21.164V4.86198C0 3.84698 0.784 3.02498 1.75 3.02498H4.593V1.64798C4.593 1.26698 4.887 0.958984 5.25 0.958984C5.612 0.958984 5.906 1.26698 5.906 1.64798V3.02498H9.844V1.64798C9.844 1.26698 10.138 0.958984 10.501 0.958984C10.862 0.958984 11.156 1.26698 11.156 1.64798V3.02498H15.094V1.64798C15.094 1.26698 15.387 0.958984 15.75 0.958984C16.112 0.958984 16.406 1.26698 16.406 1.64798V3.02498ZM19.5646 21.484C19.6466 21.3979 19.691 21.2828 19.688 21.164H19.689V4.86198C19.689 4.60898 19.493 4.40298 19.252 4.40298H16.407V5.78098C16.407 6.16198 16.113 6.46998 15.751 6.46998C15.388 6.46998 15.095 6.16198 15.095 5.78098V4.40298H11.157V5.78098C11.157 6.16198 10.863 6.46998 10.502 6.46998C10.139 6.46998 9.845 6.16198 9.845 5.78098V4.40298H5.907V5.78098C5.907 6.16198 5.613 6.46998 5.251 6.46998C4.888 6.46998 4.594 6.16198 4.594 5.78098V4.40298H1.75C1.50263 4.40953 1.30696 4.61458 1.312 4.86198V21.164C1.30696 21.4114 1.50263 21.6164 1.75 21.623H19.251C19.3698 21.6201 19.4826 21.5701 19.5646 21.484Z" fill="#A9A9A9"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.59399 9.2251H7.21899V11.2911H4.59399V9.2251ZM4.59399 12.6681H7.21899V14.7351H4.59399V12.6681ZM7.21899 16.1121H4.59399V18.1781H7.21899V16.1121ZM9.18799 16.1121H11.813V18.1781H9.18799V16.1121ZM11.813 12.6681H9.18799V14.7351H11.813V12.6681ZM9.18799 9.2251H11.813V11.2911H9.18799V9.2251ZM16.406 16.1121H13.781V18.1781H16.406V16.1121ZM13.781 12.6681H16.406V14.7351H13.781V12.6681ZM16.406 9.2251H13.781V11.2911H16.406V9.2251Z" fill="#A9A9A9"/>
+          </svg>
+        </label>
+        <label class="modal-columns modal-adults-label">Взрослые:
+          <button class="modal-minus" type="button"></button>
+          <input class="modal-input-number" type="text" value="2">
+          <button class="modal-plus" type="button"></button>
+        </label>
+        <label class="modal-columns modal-kids-label">Дети:
+          <button class="modal-minus" type="button"></button>
+          <input class="modal-input-number modal-input-kids" type="text" value="0">
+          <button class="modal-plus" type="button"></button>
+        </label>
+        <a class="button button-link modal-row">Найти</a>
+      </form>
+    </section>
 
-        <ul class="offers-list features-columns">
-          <li class="offer-item offer-housing">
-            <h3>Жильё</h3>
-            <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-          </li>
-          <li class="offer-item offer-food">
-            <h3>Еда</h3>
-            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-          </li>
-          <li class="offer-item offer-gifts">
-            <h3>Сувениры</h3>
-            <p>Не только китайского, но и местного производства!</p>
-          </li>
-        </ul>
+    <section class="map">
+      <h2 class="hidden">Карта</h2>
+      <img src="img/map.jpg" width="1199" height="593" alt="Карта">
+    </section>
+  </main>
 
-        <div class="feature-wrapper features-columns">
-          <img class="feature-image" src="img/bridge.jpg" alt="Мост дьявола" width="800" height="256">
-          <div class="feature-container">
-            <h3>Там есть мост дьявола</h3>
-            <p>— №2 —</p>
-            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-          </div>
-        </div>
+  <footer class="main-footer">
+    <section class="footer-contacts">
+      <h2 class="hidden">Наши контакты</h2>
+      <p class="caption">#visitSEDONA</p>
+      <p class="caption">Тел: +7(495) 666-01-66</p>
+    </section>
 
-        <ul class="features-list features-columns">
-          <li class="feature-item feature-container">
-            <h3>Небольшая площадь</h3>
-            <p>— №3 —</p>
-            <p>Все достопримечательности находятся очень близко</p>
-          </li>
-          <li class="feature-item feature-container">
-            <h3 class="caption">Красивая дорога</h3>
-            <p>— №4 —</p>
-            <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
-          </li>
-          <li class="feature-item feature-container">
-            <h3>Мало туристов</h3>
-            <p>— №5 —</p>
-            <p>Большинство едет в гранд каньон и толпится там</p>
-          </li>
-        </ul>
-      </section>
+    <section class="footer-social">
+      <h2 class="hidden">Мы в соцсетях</h2>
+      <ul class="social">
+        <li class="social-item"><a class="social-button button button-link" href="https://www.twitter.com/"><img
+          class="social-icon" src="img/icon-twitter.svg" alt="Twitter" width="17" height="17"></a></li>
+        <li class="social-item"><a class="social-button button button-link" href="https://www.fb.com/"><img
+          class="social-icon" src="img/icon-fb.svg" alt="Facebook" width="12" height="22"></a></li>
+        <li class="social-item"><a class="social-button button button-link" href="https://www.youtube.com/"><img
+          class="social-icon" src="img/icon-youtube.svg" alt="YouTube" width="20" height="16"></a></li>
+      </ul>
+    </section>
 
-      <section class="booking">
-        <h2 class="hidden">Бронирование</h2>
-        <p class="booking-caption">Заинтересовались?</p>
-        <p>Укажите предполагаемые даты поездки,<br>
-          и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
-        <button class="button booking-button" type="button">Поиск гостиницы в Cедоне</button>
-
-      </section>
-
-      <section class="map">
-        <h2 class="hidden">Карта</h2>
-        <img src="img/map.jpg" alt="Карта">
-      </section>
-    </main>
-
-    <footer class="main-footer">
-      <section class="footer-contacts">
-        <h2 class="hidden">Наши контакты</h2>
-        <p class="caption">#visitSEDONA</p>
-        <p class="caption">Тел: +7(495) 666-01-66</p>
-      </section>
-
-      <section class="footer-social">
-        <h2 class="hidden">Мы в соцсетях</h2>
-        <ul class="social">
-          <li class="social-item"><a class="social-button button button-link" href="https://www.twitter.com/"><img class="social-icon" src="img/icon-twitter.svg" alt="Twitter" width="17" height="17"></a></li>
-          <li class="social-item"><a class="social-button button button-link" href="https://www.fb.com/"><img class="social-icon" src="img/icon-fb.svg" alt="Facebook" width="12" height="22"></a></li>
-          <li class="social-item"><a class="social-button button button-link" href="https://www.youtube.com/"><img class="social-icon" src="img/icon-youtube.svg" alt="YouTube" width="20" height="16"></a></li>
-        </ul>
-      </section>
-
-      <section class="footer-copyright">
-        <h2 class="hidden">Об авторах</h2>
-        <span>Website by</span>
-        <a href="https://htmlacademy.ru/intensive/htmlcss"><img class="ha-logo" src="img/logo-htmlacademy.svg" alt="Website by HTML Academy"></a>
-      </section>
-    </footer>
-  </div>
-  </body>
+    <section class="footer-copyright">
+      <h2 class="hidden">Об авторах</h2>
+      <span>Website by</span>
+      <a class="copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">
+        <svg width="115" height="41" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M15.52 1.06h-.17L0 2.72v28.77l15.35 9.35 15.35-9.35V2.72L15.52 1.06zm61.5 1.56h-1.93v13.11h1.93V2.63zm-36.16.01v5.14a3.98 3.98 0 012.85-1.23c.97-.06 1.92.3 2.62 1 .69.7 1.06 1.67 1.01 2.67v5.55h-1.97v-5.3c.05-.51-.1-1.03-.41-1.43a1.9 1.9 0 00-1.3-.72h-.3c-1.01.06-1.93.62-2.46 1.5v5.95h-2V2.63h1.96zm36.16 28.85h-1.74v-1.42a4.06 4.06 0 01-3.37 1.66 4.7 4.7 0 01-4.33-4.74 4.7 4.7 0 014.33-4.73c1.21-.04 2.37.47 3.17 1.4v-5.33h1.94v13.16zm-29.95-1.42c.2 0 .39-.04.58-.1v1.43c-.4.15-.82.23-1.25.22a1.76 1.76 0 01-1.76-1.08 5.04 5.04 0 01-3.31 1.17c-1.6 0-3.07-.9-3.07-2.75 0-2.3 2.1-3.01 3.91-3.01.77.01 1.54.1 2.29.27v-.33c0-1.07-.8-1.9-2.31-1.9-1.1 0-2.17.23-3.17.68v-1.83c1.09-.38 2.22-.58 3.37-.6 2.49 0 4.02 1.22 4.02 3.95v3.23a.6.6 0 00.13.43c.1.12.23.2.39.2h.18v.02zm-6.8-1.22c.03.39.2.75.5 1 .28.26.66.38 1.04.35h.12c.95 0 1.87-.39 2.54-1.08v-1.53c-.63-.14-1.27-.21-1.91-.23-1.05 0-2.28.36-2.28 1.49zm15.75-5.9a5.18 5.18 0 00-2.7-.7h-.38c-1.2.05-2.35.58-3.18 1.48-.83.9-1.27 2.1-1.23 3.34v.44a4.48 4.48 0 004.72 4.23c1 .03 2-.18 2.91-.61v-1.85c-.78.45-1.67.69-2.56.7a2.88 2.88 0 01-2.66-1.43 3.02 3.02 0 010-3.07 2.88 2.88 0 012.66-1.43c.86 0 1.7.26 2.42.75v-1.85zm10.13 7.12c.2 0 .4-.04.58-.1v1.43c-.4.15-.82.23-1.24.22a1.76 1.76 0 01-1.77-1.08 5.04 5.04 0 01-3.3 1.17c-1.6 0-3.08-.9-3.08-2.75 0-2.3 2.11-3.01 3.92-3.01.77.01 1.53.1 2.29.27v-.33c0-1.07-.8-1.9-2.32-1.9-1.09 0-2.16.23-3.16.68v-1.83c1.08-.38 2.22-.58 3.37-.6 2.49 0 4.02 1.22 4.02 3.95v3.23a.6.6 0 00.12.43c.1.12.24.2.4.2h.17v.02zm-6.3-.21c-.29-.26-.47-.62-.5-1.01h.03c0-1.13 1.16-1.49 2.28-1.49.64.02 1.28.1 1.9.23v1.53a3.54 3.54 0 01-2.54 1.08h-.11a1.4 1.4 0 01-1.05-.34zm9.48-2.92c0-1.64 1.3-2.98 2.9-2.98l.03.06c1.21 0 2.31.73 2.8 1.86v2.16a3.02 3.02 0 01-2.82 1.88 2.95 2.95 0 01-2.91-2.98zm14.02-4.68c3.5 0 4.7 2.89 4.13 5.49h-6.56c.22 1.62 1.76 2.28 3.37 2.28.96 0 1.91-.22 2.78-.64v1.73c-1 .43-2.08.64-3.16.61-2.67 0-5.01-1.53-5.01-4.77a4.57 4.57 0 011.14-3.27c.8-.89 1.9-1.41 3.08-1.46h.23v.03zm-2.48 3.93a2.42 2.42 0 012.57-2.27h.05c.62-.06 1.23.17 1.67.62.44.45.67 1.08.62 1.71h-4.91v-.06zm8.62 5.28V22.5h1.74v1.07a3.98 3.98 0 012.93-1.37 3 3 0 012.79 1.52 4.3 4.3 0 013.07-1.44 3.2 3.2 0 012.49 1.01c.64.69.97 1.63.88 2.58v5.61h-2v-5.55c.05-.46-.08-.91-.37-1.27a1.67 1.67 0 00-1.13-.62h-.27c-.87.05-1.67.5-2.19 1.2v6.24h-2v-5.55c.04-.46-.1-.92-.38-1.27-.29-.35-.7-.57-1.15-.61h-.21c-.94.08-1.8.6-2.33 1.4v6.07h-1.83l-.04-.06zm24.49-8.99h-2l-2.66 6.8-3.01-6.78h-2.11l4.22 9.06-.18.45c-.52 1.36-1.24 2.05-2.19 2.05-.3 0-.6-.04-.9-.13v1.7c.39.1.78.14 1.17.15 1.33 0 2.58-.75 3.53-3.09l4.13-10.2zM52.68 6.8V3.55l-1.95.46v2.72h-1.59V8.5h1.65V13c-.07.83.23 1.64.82 2.21.59.58 1.4.85 2.2.75.79 0 1.58-.12 2.33-.38v-1.73c-.57.24-1.17.36-1.78.36-1.14 0-1.67-.39-1.67-1.58v-4.1h3.16V6.78H52.7zm5.7 8.96v-9h1.76v1.08a3.98 3.98 0 012.92-1.38A3 3 0 0165.8 7.9a4.3 4.3 0 013.07-1.44 3.2 3.2 0 012.5 1.05c.63.7.94 1.66.84 2.62v5.62h-2V10.2c.04-.46-.1-.91-.37-1.27a1.67 1.67 0 00-1.14-.62h-.24c-.86.05-1.66.5-2.18 1.2v6.24h-2V10.2c.04-.46-.1-.91-.37-1.27a1.67 1.67 0 00-1.13-.62h-.25c-.94.08-1.8.6-2.33 1.39v6.07H58.4zM28.7 30.3v.02-.02zm0-11.98V30.3l-13.35 8.13L2 30.32v-11.8L15.3 26.6v1.42l-9.1-5.5v1.41l9.15 5.62v1.5L6.19 25.5v1.45l9.16 5.62 9.23-5.65v-6.1l4.12-2.5zm0-1.54l-3.66 2.16-1.7 1.07-8.03-4.93v1.42l6.85 4.23-.15.1-1.06.58-5.66-3.46v1.45l4.47 2.72-1.05.72-3.38-2.05v1.41l2.22 1.34-2.25 1.36L2.1 16.86l13.2-8.13 13.4 8.05zM15.3 7.28l13.42 8.07V4.56L15.36 3.13 2.02 4.56v10.8l13.27-8.09z"
+                fill="#231F20"/>
+        </svg>
+      </a>
+    </section>
+  </footer>
+</div>
+</body>
 </html>
