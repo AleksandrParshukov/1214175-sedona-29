@@ -124,7 +124,7 @@ img {
 .site-navigation {
   width: 100%;
   margin: 0;
-  padding: 0 37px;
+  padding: 0 73px;
   list-style: none;
 
   display: flex;
@@ -135,15 +135,11 @@ img {
 
 .site-navigation li {
   min-width: 127px;
-}
-
-.site-navigation a {
-  display: block;
-  padding: 15px 35px;
+  padding: 15px 0;
 }
 
 .navigation-info {
-  margin-right: 65px;
+  margin-right: 100px;
 }
 
 .navigation-photo {
@@ -152,10 +148,12 @@ img {
 
 .navigation-map {
   margin-left: auto;
+  text-align: end;
 }
 
 .navigation-hotels {
-  margin-left: 77px;
+  margin-left: 100px;
+  text-align: end;
 }
 
 .site-navigation a:hover,
@@ -360,7 +358,6 @@ img {
   width: 568px;
   height: 86px;
   margin: auto;
-  cursor: pointer;
 }
 
 .modal {
@@ -536,6 +533,7 @@ img {
   text-transform: uppercase;
   color: var(--basic-white);
   border: none;
+  cursor: pointer;
 }
 
 .button:active {
