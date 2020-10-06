@@ -26,30 +26,69 @@
 
     <section class="filter">
       <h2 class="hidden">Фильтр</h2>
-      <form class="filter-form">
+      <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
         <div class="filter-columns">
-          <div class="filter-container infrastructure">
-            <h3>Инфраструктура</h3>
-            <label><input class="filter-item" type="checkbox" name="pool" value="pool" checked>Бассейн</label>
-            <label><input class="filter-item" type="checkbox" name="parking" value="parking">Парковка</label>
-            <label><input class="filter-item" type="checkbox" name="wifi" value="wifi">Wi-Fi</label>
-          </div>
+          <fieldset class="filter-container infrastructure">
+            <legend>Инфраструктура:</legend>
+            <ul class="filter-list">
+              <li>
+                <input class=" hidden filter-item" type="checkbox" name="pool" value="pool" id="filter-pool" checked>
+                <label class="filter-item" for="filter-pool">Бассейн</label>
+              </li>
+              <li>
+                <input class="hidden filter-item" type="checkbox" name="parking" value="parking" id="filter-parking">
+                <label class="filter-item" for="filter-parking">Парковка</label>
+              </li>
+              <li>
+                <input class="hidden filter-item" type="checkbox" name="wifi" value="wifi" id="filter-wifi">
+                <label class="filter-item" for="filter-wifi">Wi-Fi</label>
+              </li>
+            </ul>
+          </fieldset>
 
-          <div class="filter-container housing">
-            <h3>Тип жилья</h3>
-            <label><input class="filter-item" type="checkbox" name="hotel" value="hotel" checked>Гостиница</label>
-            <label><input class="filter-item" type="checkbox" name="motel" value="motel" checked>Мотель</label>
-            <label><input class="filter-item" type="checkbox" name="apartments" value="apartments"
-                          checked>Апартаменты</label>
-          </div>
+          <fieldset class="filter-container housing">
+            <legend>Тип жилья:</legend>
+            <ul class="filter-list">
+              <li>
+                <input class="hidden filter-item" type="checkbox" name="hotel" value="hotel" id="filter-hotel" checked>
+                <label for="filter-hotel">Гостиница</label>
+              </li>
+              <li>
+                <input class="hidden filter-item" type="checkbox" name="motel" value="motel" id="filter-motel" checked>
+                <label for="filter-motel">Мотель</label>
+              </li>
+              <li>
+                <input class="hidden filter-item" type="checkbox" name="apartments" value="apartments" id="filter-apartments" checked>
+                <label for="filter-apartments">Апартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
         </div>
 
         <div class="filter-columns">
-          <div class="filter-container price">
-            <h3>Стоимость в сутки (р)</h3>
-            <!-- slider -->
+          <fieldset class="filter-price">
+            <legend>Стоимость в сутки (р):</legend>
+            <div class="price-controls">
+              <div class="price-controls-columns">
+                <label class="min-price" for="filter-min-price">От</label>
+                <input type="text" name="min-price" value="0" id="filter-min-price">
+              </div>
+              <div class="price-controls-columns">
+                <label class="max-price" for="filter-max-price">До</label>
+                <input type="text" name="max-price" value="3000" id="filter-max-price">
+              </div>
+            </div>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar" style="width: 80%;"></div>
+                </div>
+                <div class="toggle toggle-min" tabindex="0" style="left: 0%"></div>
+                <div class="toggle toggle-max" tabindex="0" style="left: 80%"></div>
+              </div>
+            </div>
             <button class="button button-filter" type="submit">Показать</button>
-          </div>
+          </fieldset>
         </div>
       </form>
     </section>
@@ -64,10 +103,16 @@
           <li class="sort-item"><a href="">По типу</a></li>
           <li class="sort-item"><a href="">По рейтингу</a></li>
         </ul>
-        <button class="button-sort sort-up" type="button"><img src="img/triangle.svg" width="11" height="10"
-                                                               alt="Вверх"></button>
-        <button class="button-sort sort-down" type="button"><img src="img/triangle.svg" width="11" height="10"
-                                                                 alt="Вниз"></button>
+        <button class="sort-button sort-up" type="button" disabled>
+          <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5.5 0L0 10H11L5.5 0Z" fill="#81B3D2"/>
+          </svg>
+        </button>
+        <button class="sort-button sort-down" type="button">
+          <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.5 0L0 10H11L5.5 0Z" fill="#81B3D2"/>
+          </svg>
+        </button>
       </div>
 
       <div class="hotel-container">
