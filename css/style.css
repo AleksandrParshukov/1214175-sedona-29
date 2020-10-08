@@ -932,9 +932,18 @@ img {
   margin-right: 23px;
 }
 
-.hotels .hotel-name {
+.hotel-name {
   margin-top: -4px;
   grid-column: 2 / 4;
+}
+
+.hotel-name:hover h3,
+.hotel-name:focus h3 {
+  color: var(--basic-sky-blue);
+}
+
+.hotel-name:active h3 {
+  color: var(--special-black);
 }
 
 .hotel-type {
