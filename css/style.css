@@ -937,12 +937,12 @@ img {
   grid-column: 2 / 4;
 }
 
-.hotel-name:hover h3,
-.hotel-name:focus h3 {
+.hotel-name:hover a,
+.hotel-name:focus a {
   color: var(--basic-sky-blue);
 }
 
-.hotel-name:active h3 {
+.hotel-name:active a {
   color: var(--special-black);
 }
 
