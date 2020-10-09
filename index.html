@@ -112,17 +112,19 @@
             <path fill-rule="evenodd" clip-rule="evenodd" d="M4.59399 9.2251H7.21899V11.2911H4.59399V9.2251ZM4.59399 12.6681H7.21899V14.7351H4.59399V12.6681ZM7.21899 16.1121H4.59399V18.1781H7.21899V16.1121ZM9.18799 16.1121H11.813V18.1781H9.18799V16.1121ZM11.813 12.6681H9.18799V14.7351H11.813V12.6681ZM9.18799 9.2251H11.813V11.2911H9.18799V9.2251ZM16.406 16.1121H13.781V18.1781H16.406V16.1121ZM13.781 12.6681H16.406V14.7351H13.781V12.6681ZM16.406 9.2251H13.781V11.2911H16.406V9.2251Z" fill="#A9A9A9"/>
           </svg>
         </label>
-        <label class="modal-columns modal-adults-label">Взрослые:
-          <input class="modal-input-number" type="text" value="2">
+        <div class="modal-columns">
+          <label class="modal-adults-label" for="modal-input-adults">Взрослые:</label>
+          <input class="modal-input-number modal-input-adults" type="text" value="2" id="modal-input-adults">
           <button class="modal-minus" type="button"></button>
           <button class="modal-plus" type="button"></button>
-        </label>
-        <label class="modal-columns modal-kids-label">Дети:
-          <input class="modal-input-number modal-input-kids" type="text" value="0">
+        </div>
+        <div class="modal-columns">
+          <label class="modal-kids-label" for="modal-input-kids">Дети:</label>
+          <input class="modal-input-number modal-input-kids" type="text" value="0" id="modal-input-kids">
           <button class="modal-minus" type="button"></button>
           <button class="modal-plus" type="button"></button>
-        </label>
-        <a class="button button-link modal-row">Найти</a>
+        </div>
+        <a class="button button-link modal-row" href="">Найти</a>
       </form>
     </section>
 
