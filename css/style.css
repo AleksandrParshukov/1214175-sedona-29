@@ -420,9 +420,10 @@ img {
 }
 
 .modal-input-date:focus {
+  outline: none;
   background-color: var(--basic-white);
   border: 2px solid var(--basic-darken-light-gray);
-  box-sizing: border-box;
+  padding: 4px 10px;
 }
 
 .modal-calendar {
@@ -939,7 +940,7 @@ img {
   margin-right: 23px;
 }
 
-.hotel-name {
+.hotel-container .hotel-name {
   margin-top: -4px;
   grid-column: 2 / 4;
 }
