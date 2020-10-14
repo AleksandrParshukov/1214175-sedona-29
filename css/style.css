@@ -695,6 +695,14 @@ img {
   background-image: url("../img/checkbox-off.svg");
 }
 
+.filter-item:focus + label::before {
+  box-shadow: 0 0 0 2px var(--basic-black);
+}
+
+.filter-item:active + label::before {
+  outline: none;
+}
+
 .price {
   margin: auto;
 }
