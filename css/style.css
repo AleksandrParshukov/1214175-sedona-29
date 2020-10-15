@@ -375,7 +375,6 @@ img {
   position: absolute;
   bottom: 0;
   left: 50%;
-  transform: translate(-50%, 100%);
 
   font-weight: 700;
   line-height: 26px;
@@ -387,6 +386,14 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  transform: translate(-50%, 100%) scaleY(0);
+  transform-origin: 50% 0;
+  transition-duration: 0.15s;
+}
+
+.modal-visible {
+  transform: translate(-50%, 100%) scaleY(1);
 }
 
 .modal-row {
@@ -463,6 +470,7 @@ img {
   min-width: 38px;
   height: 100%;
   background-color: var(--basic-lighten-gray);
+  cursor: pointer;
 }
 
 .modal-minus {
