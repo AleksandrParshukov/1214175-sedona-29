@@ -387,13 +387,13 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
 
-  transform: translate(-50%, 100%) scaleY(0);
+  transform: translate(-50%, 100%) scaleY(1);
   transform-origin: 50% 0;
   transition-duration: 0.15s;
 }
 
-.modal-visible {
-  transform: translate(-50%, 100%) scaleY(1);
+.modal-hidden {
+  transform: translate(-50%, 100%) scaleY(0);
 }
 
 .modal-row {
@@ -420,6 +420,10 @@ img {
   flex-basis: 346px;
   box-sizing: border-box;
   padding: 6px 12px;
+}
+
+.input-error {
+  box-shadow: 0 0 7px 0 var(--specal-darken-sky-blue);
 }
 
 .modal-input-date:hover {
