@@ -5,15 +5,11 @@ const MAX_ADULTS_VALUE = 20;
 
 const bookingButton = document.querySelector(".booking-button");
 const modal = document.querySelector(".modal ");
-const guests = modal.querySelectorAll(".modal-columns");
-const dateArrival = modal.querySelector("#modal-arrival-date");
-const dateDeparture = modal.querySelector("#modal-departure-date");
-const adultsValue = guests[0].querySelector(".modal-input-number");
-const kidsValue = guests[1].querySelector(".modal-input-number");
+const dateArrival = modal.querySelector("[name='arrival-date']");
+const dateDeparture = modal.querySelector("[name='departure-date']");
+const adultsValue = modal.querySelector("[name='adults']");
+const kidsValue = modal.querySelector("[name='kids']");
 const modalSubmit = modal.querySelector(".button-link");
-
-let minusBtn = guests[0].querySelector(".modal-minus");
-let plusBtn = guests[0].querySelector(".modal-plus");
 
 
 /* Modal */
@@ -26,35 +22,23 @@ bookingButton.addEventListener("click", function (evt) {
 
 
 /* Modal Inputs */
-minusBtn.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  if (adultsValue.value > MIN_ADULTS_VALUE) {
-    adultsValue.value = String(+adultsValue.value - 1);
-  }
-});
+initializingButtons(adultsValue, MIN_ADULTS_VALUE, MAX_ADULTS_VALUE);
+initializingButtons(kidsValue, MIN_KIDS_VALUE, MAX_KIDS_VALUE);
 
-plusBtn.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  if (adultsValue.value < MAX_ADULTS_VALUE) {
-    adultsValue.value = String(+adultsValue.value + 1);
-  }
-});
-
-minusBtn = guests[1].querySelector(".modal-minus");
-plusBtn = guests[1].querySelector(".modal-plus");
-
-minusBtn.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  if (kidsValue.value > MIN_KIDS_VALUE) {
-    kidsValue.value = String(+kidsValue.value - 1);
-  }
-});
-plusBtn.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  if (kidsValue.value < MAX_KIDS_VALUE) {
-    kidsValue.value = String(+kidsValue.value + 1);
-  }
-});
+function initializingButtons (input, min, max) {
+  input.previousElementSibling.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    if (input.value > min) {
+      input.value = String(+input.value - 1);
+    }
+  });
+  input.nextElementSibling.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    if (input.value < max) {
+      input.value = String(+input.value + 1);
+    }
+  });
+}
 
 
 /* Validation */

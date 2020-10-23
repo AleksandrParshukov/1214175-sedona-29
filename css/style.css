@@ -485,12 +485,12 @@ img {
   order: 3;
 }
 
-.modal-input-adults + .modal-minus {
-  margin-left: 40px;
+.modal-adults-label {
+  margin-right: 40px;
 }
 
-.modal-input-kids + .modal-minus {
-  margin-left: 26px;
+.modal-kids-label {
+  margin-right: 26px;
 }
 
 .modal-minus::before {
