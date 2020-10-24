@@ -558,8 +558,6 @@ img {
 .map {
   width: 1200px;
   height: 594px;
-  background-color: transparent;
-  background-image: url("../img/map.jpg");
 }
 
 
