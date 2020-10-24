@@ -1026,6 +1026,7 @@ img {
 .main-footer {
   background-color: var(--special-darken-white);
   padding: 0 73px;
+  z-index: 1;
 
   grid-column: 1 / 2;
   grid-row: 3 / 4;
