@@ -301,17 +301,17 @@ img {
 }
 
 .offer-housing {
-  background-image: url("../img/icon-house.svg");
+  background-image: url("../img/icon_house.svg");
   background-position: center 60px;
 }
 
 .offer-gifts {
-  background-image: url("../img/icon-gift.svg");
+  background-image: url("../img/icon_gift.svg");
   background-position: center 55px;
 }
 
 .offer-food {
-  background-image: url("../img/icon-food.svg");
+  background-image: url("../img/icon_food.svg");
   background-position: center 61px;
 }
 
@@ -607,7 +607,7 @@ img {
 .filter {
   color: var(--basic-white);
   background-color: var(--basic-sky-blue);
-  background-image: url("../img/filter-background.jpg");
+  background-image: url("../img/filter_background.jpg");
   min-height: 217px;
 }
 
@@ -692,7 +692,7 @@ img {
 .filter-item:checked + label::before {
   width: 27px;
   border: none;
-  background-image: url("../img/checkbox-on.svg");
+  background-image: url("../img/checkbox_on.svg");
 }
 
 .filter-item:disabled + label::before {
@@ -702,7 +702,7 @@ img {
 .filter-item:disabled:checked + label::before {
   width: 27px;
   border: none;
-  background-image: url("../img/checkbox-off.svg");
+  background-image: url("../img/checkbox_off.svg");
 }
 
 .filter-item:focus + label::before {
@@ -974,7 +974,7 @@ img {
 
 .hotel-container .hotel-name {
   margin-top: -4px;
-  grid-column: 2 / 4;
+  grid-column: 2 / 5;
 }
 
 .hotel-name:hover a,
@@ -1069,7 +1069,8 @@ img {
   margin-right: 6px;
 }
 
-.social-item:last-child {
+.social-item:last-child,
+.social-item:nth-child(7n) {
   margin-right: 0;
 }
 
