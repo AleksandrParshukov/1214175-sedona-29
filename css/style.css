@@ -12,8 +12,8 @@
   --basic-sky-blue: #81B3D2;
   --basic-brown: #766357;
 
-  --specal-sky-blue: #669EC0;
-  --specal-darken-sky-blue: #5496BD;
+  --special-sky-blue: #669EC0;
+  --special-darken-sky-blue: #5496BD;
   --special-brown: #604E43;
   --special-darken-brown: #503E33;
   --special-white: rgba(255, 255, 255, 0.3);
@@ -186,7 +186,7 @@ img {
 .banner {
   width: 1200px;
   height: 509px;
-  background-color: var(--basic-white);
+  background-color: var(--special-darken-sky-blue);
   background-image: url("../img/mask.svg"), url("../img/banner.jpg");
   background-position: bottom;
   background-repeat: no-repeat;
@@ -421,7 +421,8 @@ img {
 }
 
 .input-error {
-  box-shadow: 0 0 7px 0 var(--specal-darken-sky-blue);
+  animation: 0.3s ease-in-out shake;
+  box-shadow: 0 0 7px 0 var(--special-darken-sky-blue);
 }
 
 .modal-input-date:hover {
@@ -595,11 +596,11 @@ img {
 
 .button-link:hover,
 .button-link:focus {
-  background-color: var(--specal-sky-blue);
+  background-color: var(--special-sky-blue);
 }
 
 .button-link:active {
-  background-color: var(--specal-darken-sky-blue);
+  background-color: var(--special-darken-sky-blue);
 }
 
 
@@ -825,9 +826,7 @@ img {
   position: absolute;
   top: -9px;
   left: 0;
-  width: 4px;
-  height: 4px;
-  padding: 0;
+  padding: 2px;
   border: 8px solid var(--basic-white);
   background-color: var(--special-light);
   border-radius: 50%;
@@ -1110,3 +1109,15 @@ img {
 }
 
 
+/* Animations */
+@keyframes shake {
+  0%, 50%, 100% {
+    transform: rotate(0deg);
+  }
+  10%, 30% {
+    transform: rotate(-2deg);
+  }
+  20%, 40% {
+    transform: rotate(2deg);
+  }
+}
